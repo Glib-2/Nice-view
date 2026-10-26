@@ -4,117 +4,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nice view</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nice View</title>
     <link rel="stylesheet" href="modern-normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/Frame 42.png" alt="logo">
+
+    <header id="home">
+        <img class="logo" src="images/Frame 42.png" alt="Nice View">
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Apartments</a>
-            <a href="#">Infrastructure</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contacts</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#apartments">Apartments</a>
+            <a href="#infrastructure">Infrastructure</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contacts">Contacts</a>
         </nav>
 
-        <button>Contact us</button>
+        <a class="header-button" href="#contacts">Contact us</a>
     </header>
+
     <main>
+
         <section class="sec1">
             <h1>Nice view</h1>
             <p>For your comfortable life with your family</p>
-            <button>Contact us</button>
 
-            <img class="img1" src="images/Illustration - pavan 712.png" alt="people">
-            <img class="img2" src="images/Illustration - pavan 704.png" alt="girl">
+            <div class="hero-bottom">
+                <img class="img1" src="images/Illustration - pavan 712.png" alt="People">
+                <a class="main-button" href="#contacts">Contact us</a>
+                <img class="img2" src="images/Illustration - pavan 704.png" alt="Girl">
+            </div>
         </section>
-        <section class="sec2">
+
+        <section class="sec2" id="about">
             <div class="img-fon">
-                <img class="img3" src="images/Illustration - pavan 683.png" alt="oo">
+
                 <div class="div-poz">
-                    <div>
-                        <div>
-                            <img src="/images/iconoir_large-suitcase.png" alt="images">
-                            <h4>15 years of experience</h4>
+
+                    <div class="statistics">
+
+                        <div class="stat-item">
+                            <img src="images/iconoir_large-suitcase.png" alt="Experience">
+                            <p>15 years of experience</p>
                         </div>
-                        <div>
-                            <img src="/images/Group.png" alt="images">
-                            <h4>30 thousand happy residents</h4>
+
+                        <div class="stat-item">
+                            <img src="images/Group.png" alt="Residents">
+                            <p>30 thousand happy residents</p>
                         </div>
-                        <div>
-                            <img src="/images/iconoir_home.png" alt="images">
-                            <h4>22 houses built</h4>
+
+                        <div class="stat-item">
+                            <img src="images/iconoir_home.png" alt="Houses">
+                            <p>22 houses built</p>
                         </div>
-                        <div>
-                            <img src="/images/Vector.png" alt="images">
-                            <h4>9 awards</h4>
+
+                        <div class="stat-item">
+                            <img src="images/Vector.png" alt="Awards">
+                            <p>9 awards</p>
                         </div>
+
                     </div>
-                    <div>
+
+                    <div class="philosophy">
                         <h3>Philosophy of our company</h3>
-                        <p>Residential complex “Nice view” is an island of tranquility, security and comfort.
-                            In our project, we created the opportunity to lead a measured life in the very center of the
-                            city.</p>
+                        <p>
+                            Residential complex “Nice view” is an island of
+                            tranquility, security and comfort.
+                            In our project, we created the opportunity to lead
+                            a measured life in the very center of the city.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="sec3">
-            <h1>Choose your apartment</h1>
 
-            <div class="tatodiv">
-                <div>
-                    <img src="/images/image 36.png" alt="img">
-                    <h2>Type 1</h2>
-                    <p>total area 23 meters</p>
                 </div>
-                <div>
-                    <img src="/images/image 35.png" alt="img">
-                    <h2>Type 2</h2>
-                    <p>total area 27 meters</p>
-                </div>
-                <div>
-                    <img style="left: 80px;" src="/images/image 37.png" alt="img">
-                    <h2>Type 3</h2>
-                    <p>total area 31 meters</p>
-                </div>
-            </div>
 
-            <button>Download catalog</button>
-        </section>
-        <section class="sec4">
-            <h1>Infrastructure</h1>
-            <div class="img-fon2">
-                <div class="poz">
-                    <div>
-                        <button>2 <br>
-                            minutes
-                            walk</button>
-                        <p>to the supermaket</p>
-                    </div>
-                    <div>
-                        <p>to the coffee shop</p>
-                        <button>4 <br> minutes
-                            walk</button>
-                    </div>
-                    <div>
-                        <button>7 <br> minutes
-                            walk</button>
-                        <p>to the nearest park</p>
-                    </div>
-                </div>
+                <img class="img3" src="images/Illustration - pavan 683.png" alt="Person">
             </div>
         </section>
 
-        <section class="sec5"></section>
-        <section class="sec6"></section>
+        <section class="sec3" id="apartments">
+            <div class="container">
+
+                <h2 class="section-title">Choose your apartment</h2>
+
+                <div class="tatodiv">
+
+                    <div class="apartment-card">
+                        <img src="images/image 36.png" alt="Apartment type 1">
+                        <h3>Type 1</h3>
+                        <p>total area 23 meters</p>
+                    </div>
+
+                    <div class="apartment-card">
+                        <img src="images/image 35.png" alt="Apartment type 2">
+                        <h3>Type 2</h3>
+                        <p>total area 27 meters</p>
+                    </div>
+
+                    <div class="apartment-card">
+                        <img src="images/image 37.png" alt="Apartment type 3">
+                        <h3>Type 3</h3>
+                        <p>total area 31 meters</p>
+                    </div>
+
+                </div>
+
+                <a class="catalog-button" href="catalog.pdf" download>Download catalog</a>
+            </div>
+        </section>
+
+        <section class="sec4" id="infrastructure">
+            <div class="container">
+
+                <h2 class="section-title">Infrastructure</h2>
+
+                <div class="img-fon2">
+
+                    <div class="poz">
+
+                        <div class="infrastructure-row">
+                            <div class="circle">
+                                2<br>minutes<br>walk
+                            </div>
+                            <p>to the supermarket</p>
+                        </div>
+
+                        <div class="infrastructure-row">
+                            <p>to the coffee shop</p>
+                            <div class="circle">
+                                4<br>minutes<br>walk
+                            </div>
+                        </div>
+
+                        <div class="infrastructure-row">
+                            <div class="circle">
+                                7<br>minutes<br>walk
+                            </div>
+                            <p>to the nearest park</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sec5" id="gallery">
+            <div class="container">
+
+                <h2 class="section-title">Gallery</h2>
+
+                <div class="gallery">
+
+                    <span class="gallery-arrow">❮</span>
+
+                    
+                    <img class="gallery-side" src="./images/image 27.webp" alt="Gallery">
+
+                    
+                    <img class="gallery-main" src="./images/image 29.webp" alt="Gallery">
+
+                    
+                    <img class="gallery-side" src="./images/image 28.png" alt="Gallery">
+
+                    <span class="gallery-arrow">❯</span>
+
+                </div>
+
+                <div class="gallery-dots">
+                    <span class="dot"></span>
+                    <span class="dot-active"></span>
+                    <span class="dot"></span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sec6" id="contacts">
+
+            <h2>Get in touch!</h2>
+            <p class="contacts-subtitle">Contact us for a quote.</p>
+
+            <div class="contacts-box">
+
+                <div class="contacts-info">
+                    <p>⌖ 4517 Washington Ave.</p>
+                    <p>✉ willie.jennings@example.com</p>
+                    <p>☎ (+33)7 00 55 54 79</p>
+                </div>
+
+                <a class="contacts-button" href="mailto:willie.jennings@example.com">
+                    Contact us
+                </a>
+
+            </div>
+        </section>
+
     </main>
-    <footer></footer>
-</body>
 
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <img src="images/Frame 42.png" alt="Nice View">
+            </div>
+
+            <div class="footer-navigation">
+                <h3>Navigation</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#apartments">Apartments</a>
+                <a href="#infrastructure">Infrastructure</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+
+            <div class="footer-contacts">
+                <h3>Contacts</h3>
+                <p>(406) 555-0120</p>
+                <p>ul. Chodkiewicza Karola 111, Chorzów</p>
+                <p>deanna.curtis@example.com</p>
+            </div>
+
+            <div class="socials">
+                <a href="#contacts">▶</a>
+                <a href="#contacts">◎</a>
+                <a href="#contacts">♥</a>
+                <a href="#contacts">f</a>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">
+            By using this website, you agree to the Terms of Service and Privacy Policy.
+        </p>
+
+    </footer>
+
+</body>
 </html>
